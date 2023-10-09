@@ -7,22 +7,11 @@ import { Link } from "react-router-dom";
 
 
 export const Header = () => {
-    const [btnname, setbtnname] = useState(["Login"])
 
-    return (<div className="header">
-        <div className="logo-container">
-            <img className="logo" src={link} /></div>
-        <div className="nav-items">
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About Us</Link></li>
-                <li>Contact US</li>
-                <li>Cart</li>
-                <button
-                    className="login"
-                    onClick={() => { setbtnname("Logout") }}>{btnname}</button>
-            </ul>
-        </div>
-    </div>
+
+    return (
+        <div className="h-28"><div className="header flex w-[100%] h-[50%] p-4 m-1 border border-solid">
+            <h1 className=" px-[45%]">Pokemon KingDom</h1>
+        </div></div>
     )
 };

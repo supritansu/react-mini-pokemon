@@ -45,13 +45,13 @@ export const Body = () => {
     return list_rest.length === 0 ? (
         <Shimmer />
     ) : (
-        <div className="body">
-            <div className="res-container">
+        <div className="flex flex-col items-center container mx-auto px-10">
+            <div className="flex flex-wrap mx-auto">
                 {list_rest.map((each) => (
                     <PokemonThumbnail newdata={each} key={each.id} />
                 ))}
             </div>
-            <button className="loadmore" onClick={handleLoadMoreClick}>
+            <button className="m-4 p-4 border border-solid-black bg-slate-200" onClick={handleLoadMoreClick}>
                 More Pokemons
             </button>
         </div>
